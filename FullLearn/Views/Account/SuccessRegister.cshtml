@@ -1,0 +1,19 @@
+﻿@using FullLearn.Data.Entities.User
+@model User
+@{
+    ViewData["Title"] = "پایان ثبت نام";
+}
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">فول لرن</a></li>
+            <li class="breadcrumb-item active" aria-current="page">پایان ثبت نام</li>
+        </ul>
+    </nav>
+</div>
+
+<div class="alert alert-success">
+    <h2>@Model.UserName عزیز</h2>
+    <p>ایمیلی حاوی لینک تکمیل ثبت نام برای شما به ایمیل @Model.Email ارسال شد.</p>
+</div>
